@@ -2,7 +2,9 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './pages/Home';
-import Initiatives from './pages/Initiatives';
+import AboutUs from './pages/AboutUs';
+import Programs from './pages/Programs';
+import Pledges from './pages/Pledges';
 import Events from './pages/Events';
 import News from './pages/News';
 import Contact from './pages/Contact';
@@ -22,7 +24,9 @@ function App() {
                 <main className="flex-grow">
                   <Routes>
                     <Route path="/" element={<Home />} />
-                    <Route path="/initiatives" element={<Initiatives />} />
+                    <Route path="/about" element={<AboutUs />} />
+                    <Route path="/programs" element={<Programs />} />
+                    <Route path="/pledges" element={<Pledges />} />
                     <Route path="/events" element={<Events />} />
                     <Route path="/news" element={<News />} />
                     <Route path="/contact" element={<Contact />} />

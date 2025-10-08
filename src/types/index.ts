@@ -4,7 +4,9 @@ export interface SiteSettings {
   logoUrl: string;
   heroTitle: string;
   heroSubtitle: string;
-  aboutText: string;
+  aboutSummary: string;
+  founderMessage: string;
+  aboutUsContent: string;
 }
 
 export interface Section {
@@ -28,6 +30,13 @@ export interface Initiative {
   description: string;
   imageUrl: string;
   category: 'haribol' | 'aikyatan' | 'other';
+  details?: string;
+}
+
+export interface Pledge {
+  language: string;
+  text: string;
+  transliteration?: string;
 }
 
 export interface Event {
@@ -46,6 +55,8 @@ export interface NewsItem {
   content: string;
   date: string;
   imageUrl: string;
+  videoUrl?: string;
+  type: 'news' | 'video' | 'message';
 }
 
 export interface Contact {

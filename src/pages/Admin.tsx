@@ -151,6 +151,7 @@ export default function Admin() {
       content: 'Full article content',
       date: new Date().toISOString(),
       imageUrl: '',
+      type: 'news' as const,
     };
     setNews([...news, newNews]);
   };
@@ -309,8 +310,8 @@ export default function Admin() {
                 <div>
                   <label className="block text-sm font-medium mb-1">About Text</label>
                   <textarea
-                    value={siteSettings.aboutText}
-                    onChange={(e) => setSiteSettings({ ...siteSettings, aboutText: e.target.value })}
+                    value={siteSettings.aboutSummary}
+                    onChange={(e) => setSiteSettings({ ...siteSettings, aboutSummary: e.target.value })}
                     className="w-full px-4 py-2 border rounded-lg"
                     rows={4}
                   />

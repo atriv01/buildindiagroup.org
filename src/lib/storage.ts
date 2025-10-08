@@ -24,11 +24,13 @@ const STORAGE_KEYS = {
 
 const DEFAULT_SITE_SETTINGS: SiteSettings = {
   title: 'Build India Group',
-  tagline: 'Building a Better Tomorrow',
+  tagline: 'cultivating good citizenry',
   logoUrl: '',
-  heroTitle: 'Welcome to Build India Group',
-  heroSubtitle: 'Empowering communities through education, culture, and social initiatives',
-  aboutText: 'Build India Group is dedicated to fostering social development through various initiatives including Haribol and Aikyatan programs.',
+  heroTitle: 'Build India Group',
+  heroSubtitle: 'Let us together cultivate good citizenry for a healthy nation',
+  aboutSummary: 'Build India Group is an NGO building good citizenry consciousness amongst the young across the country. Our objective is to foster good citizenry for a healthy nation with Article 51A of the Constitution dealing with fundamental duties as the foundation.',
+  founderMessage: '',
+  aboutUsContent: '',
 };
 
 const DEFAULT_SECTIONS: Section[] = [
